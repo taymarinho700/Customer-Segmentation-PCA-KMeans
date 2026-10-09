@@ -6,10 +6,10 @@ Este projeto aplica técnicas avançadas de Ciência de Dados e Aprendizado Não
 
 ## 🎯 O Problema de Negócio
 
-Uma empresa de e-commerce possui uma base de dados rica com 2.240 registros e dezenas de atributos demográficos, comportamentais e financeiros[cite: 1]. 
+Uma empresa de e-commerce possui uma base de dados rica com 2.240 registros e dezenas de atributos demográficos, comportamentais e financeiros.
 
 * **Desafio:** A quantidade excessiva de atributos gera alta correlação e ruído estatístico, dificultando o agrupamento claro de clientes.
-* **Objetivo:** Aplicar **PCA (Principal Component Analysis)** para reduzir o espaço dimensional preservando a maior parte da variância dos dados, e utilizar o algoritmo **K-Means** para definir personas acionáveis de marketing[cite: 5, 8].
+* **Objetivo:** Aplicar **PCA (Principal Component Analysis)** para reduzir o espaço dimensional preservando a maior parte da variância dos dados, e utilizar o algoritmo **K-Means** para definir personas acionáveis de marketing.
 
 ---
 
@@ -26,28 +26,28 @@ Uma empresa de e-commerce possui uma base de dados rica com 2.240 registros e de
 ## 🚀 Metodologia Executada
 
 1. **Tratamento & Feature Engineering:**
-   * Imputação de nulos (`Renda` ajustada pela mediana)[cite: 1].
-   * Remoção de atributos sem variância/identificadores (`ID`, `Z_CostContact`, `Z_Revenue`)[cite: 1].
-   * Tratamento de outliers em renda e idade[cite: 1].
+   * Imputação de nulos (`Renda` ajustada pela mediana).
+   * Remoção de atributos sem variância/identificadores (`ID`, `Z_CostContact`, `Z_Revenue`).
+   * Tratamento de outliers em renda e idade.
    * Criação de novas variáveis de negócio: `Idade`, `Idade_conta`, `Total_Gastos`, `Total_Filhos` e `Total_Compras`.
-   * Aplicação de **One-Hot Encoding** nas categóricas, totalizando 38 colunas numéricas[cite: 4].
+   * Aplicação de **One-Hot Encoding** nas categóricas, totalizando 38 colunas numéricas.
 
 2. **Padronização:**
-   * Utilização do `StandardScaler` (Média = 0, Desvio Padrão = 1), garantindo a premissa matemática do PCA[cite: 4].
+   * Utilização do `StandardScaler` (Média = 0, Desvio Padrão = 1), garantindo a premissa matemática do PCA.
 
 3. **Redução de Dimensionalidade (PCA):**
-   * Análise do **Scree Plot** da variância explicada acumulada[cite: 5].
-   * Seleção de **18 Componentes Principais (PCs)**, garantindo a preservação de **80% de toda a variância dos dados** e eliminando a multicolinearidade[cite: 4, 5].
+   * Análise do **Scree Plot** da variância explicada acumulada.
+   * Seleção de **18 Componentes Principais (PCs)**, garantindo a preservação de **80% de toda a variância dos dados** e eliminando a multicolinearidade.
 
 4. **Clustering & Modelagem (K-Means):**
-   * Definição da quantidade ideal de grupos utilizando o **Método do Cotovelo (Elbow Method)** e o **Silhouette Score**[cite: 6, 7].
-   * Agrupamento em **K = 4 Clusters**, trazendo equilíbrio entre coesão estatística e viabilidade estratégica[cite: 7, 8].
+   * Definição da quantidade ideal de grupos utilizando o **Método do Cotovelo (Elbow Method)** e o **Silhouette Score**.
+   * Agrupamento em **K = 4 Clusters**, trazendo equilíbrio entre coesão estatística e viabilidade estratégica.
 
 ---
 
 ## 📈 Resultados & Personas Encontradas
 
-A redução no espaço das componentes principais permitiu identificar 4 perfis bem definidos de consumidores[cite: 8, 9]:
+A redução no espaço das componentes principais permitiu identificar 4 perfis bem definidos de consumidores:
 
 | Cluster | Nome da Persona | Renda Média | Gasto Médio | Filhos | Ação Estratégica Recomendada |
 |:---:|:---:|:---:|:---:|:---:|:---|
@@ -69,8 +69,3 @@ cd Segmentação-Cliente-PCA-KMeans
 
 # Iniciar o Jupyter Notebook
 jupyter notebook
-## 📂 Como Executar este Projeto
-
-```bash
-# Clonar o repositório
-git clone [https://github.com/taymarinho700/portfolio-pca-customer-segmentation.git](https://github.com/taymarinho700/portfolio-pca-customer-segmentation.git)
