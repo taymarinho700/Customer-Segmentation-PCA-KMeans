@@ -39,15 +39,21 @@ Uma empresa de e-commerce possui uma base de dados rica com 2.240 registros e de
    * Análise do **Scree Plot** da variância explicada acumulada.
    * Seleção de **18 Componentes Principais (PCs)**, garantindo a preservação de **80% de toda a variância dos dados** e eliminando a multicolinearidade.
 
+![Variância Explicada pelo PCA](PCS.png)
+
 4. **Clustering & Modelagem (K-Means):**
    * Definição da quantidade ideal de grupos utilizando o **Método do Cotovelo (Elbow Method)** e o **Silhouette Score**.
    * Agrupamento em **K = 4 Clusters**, trazendo equilíbrio entre coesão estatística e viabilidade estratégica.
+
+![Método do Cotovelo](COTOVELO%20METHOD.png)
 
 ---
 
 ## 📈 Resultados & Personas Encontradas
 
 A redução no espaço das componentes principais permitiu identificar 4 perfis bem definidos de consumidores:
+
+![Segmentação de Clientes](SEGMENTAÇÃO%20DE%20CLIENTES.png)
 
 | Cluster | Nome da Persona | Renda Média | Gasto Médio | Filhos | Ação Estratégica Recomendada |
 |:---:|:---:|:---:|:---:|:---:|:---|
