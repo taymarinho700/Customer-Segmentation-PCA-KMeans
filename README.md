@@ -51,11 +51,24 @@ A redução no espaço das componentes principais permitiu identificar 4 perfis 
 
 | Cluster | Nome da Persona | Renda Média | Gasto Médio | Filhos | Ação Estratégica Recomendada |
 |:---:|:---:|:---:|:---:|:---:|:---|
-| **0** | **Massa Econômica**[cite: 9] | R$ 35.019,27[cite: 9] | R$ 94,95[cite: 9] | 1,23[cite: 9] | Cupons de desconto, frete grátis e produtos de entrada[cite: 9]. |
-| **1** | **Alto Valor Consolidado**[cite: 9] | R$ 73.160,66[cite: 9] | R$ 1.264,01[cite: 9] | 0,24[cite: 9] | E-mail marketing personalizado e lançamentos de marcas *premium*[cite: 9]. |
-| **2** | **Engajados Família**[cite: 9] | R$ 57.124,74[cite: 9] | R$ 712,55[cite: 9] | 1,23[cite: 9] | Programas de cashback e ofertas em pacotes familiares[cite: 9]. |
-| **3** | **Champions VIP**[cite: 9] | R$ 81.358,91[cite: 9] | R$ 1.635,31[cite: 9] | 0,17[cite: 9] | Atendimento exclusivo, acesso antecipado e clube de fidelidade fechado[cite: 9]. |
+| **0** | **Massa Econômica** | R$ 35.019,27 | R$ 94,95 | 1,23 | Cupons de desconto, frete grátis e produtos de entrada. |
+| **1** | **Alto Valor Consolidado** | R$ 73.160,66 | R$ 1.264,01 | 0,24 | E-mail marketing personalizado e lançamentos de marcas *premium*. |
+| **2** | **Engajados Família** | R$ 57.124,74 | R$ 712,55 | 1,23 | Programas de cashback e ofertas em pacotes familiares. |
+| **3** | **Champions VIP** | R$ 81.358,91 | R$ 1.635,31 | 0,17 | Atendimento exclusivo, acesso antecipado e clube de fidelidade fechado. |
 
+---
+
+## 📂 Como Executar este Projeto
+
+```bash
+# Clonar o repositório
+git clone [https://github.com/taymarinho700/Segmentação-Cliente-PCA-KMeans.git](https://github.com/taymarinho700/Segmentação-Cliente-PCA-KMeans.git)
+
+# Entrar na pasta do projeto
+cd Segmentação-Cliente-PCA-KMeans
+
+# Iniciar o Jupyter Notebook
+jupyter notebook
 ## 📂 Como Executar este Projeto
 
 ```bash
