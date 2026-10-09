@@ -45,7 +45,7 @@ Uma empresa de e-commerce possui uma base de dados rica com 2.240 registros e de
    * Definição da quantidade ideal de grupos utilizando o **Método do Cotovelo (Elbow Method)** e o **Silhouette Score**.
    * Agrupamento em **K = 4 Clusters**, trazendo equilíbrio entre coesão estatística e viabilidade estratégica.
 
-![Método do Cotovelo](COTOVELO%20METHOD.png)
+![Método do Cotovelo](ELBOW%20METHOD.png)
 
 ---
 
@@ -64,14 +64,11 @@ A redução no espaço das componentes principais permitiu identificar 4 perfis 
 
 ---
 
-## 📂 Como Executar este Projeto
-
-```bash
 # Clonar o repositório
-git clone [https://github.com/taymarinho700/Segmentação-Cliente-PCA-KMeans.git](https://github.com/taymarinho700/Segmentação-Cliente-PCA-KMeans.git)
+git clone https://github.com/taymarinho700/Customer-Segmentation-PCA-KMeans.git
 
 # Entrar na pasta do projeto
-cd Segmentação-Cliente-PCA-KMeans
+cd Customer-Segmentation-PCA-KMeans
 
 # Iniciar o Jupyter Notebook
 jupyter notebook
